@@ -47,6 +47,9 @@ class Messages extends Api{
      * @link https://mandrillapp.com/api/docs/messages.JSON.html#method=send-template
      */
     public function sendTemplate($templateName, Message $message, array $templateContent = array(), $async = false, $ipPool = NULL, $sendAt = NULL){
+        if(!sizeof($templateContent)){
+            $templateContent = array('');   // Mandrill will not accept an empty array for template_content, but it does not require any actual content.
+        }
         return $this->request('send-template', array(
             'template_name' => $templateName,
             'template_content'=> $templateContent,
