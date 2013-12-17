@@ -31,6 +31,20 @@ class Recipient extends Struct{
     protected $metadata = array();
 
     /**
+     * @param string $email the recipient's email address
+     * @param string $name the recipient's name
+     */
+    function __construct($email = NULL, $name = NULL){
+        if(!is_null($email)){
+            $this->email = $email;
+        }
+        if(!is_null($name)){
+            $this->name = $name;
+        }
+    }
+
+
+    /**
      * Add a merge variable to this recipient
      * @param string $name
      * @param string $content
