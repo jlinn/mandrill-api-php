@@ -117,6 +117,18 @@ class Messages extends Api{
     }
 
     /**
+     * Get the full content of a recently sent message
+     * @param string $id the unique id of the message to retrieve
+     * @return array
+     * @link https://mandrillapp.com/api/docs/messages.JSON.html#method=content
+     */
+    public function content($id){
+        return $this->request('content', array(
+            'id' => $id
+        ));
+    }
+
+    /**
      * Parse the full MIME document for an email message, returning the content of the message broken into its constituent pieces
      * @param string $rawMessage the full MIME document of an email message
      * @return array
