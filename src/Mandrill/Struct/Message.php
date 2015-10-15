@@ -269,7 +269,7 @@ class Message extends Struct{
         );
         $this->recipient_metadata[] = array(
             'rcpt' => $recipient->email,
-            'vars' => $recipient->getMetadata()
+            'values' => $recipient->getMetadata()
         );
         return $this;
     }
