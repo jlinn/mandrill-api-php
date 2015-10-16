@@ -21,6 +21,11 @@ class Recipient extends Struct{
     public $name;
 
     /**
+     * @var string the recipient's header type i.e. 'to', 'cc', 'bcc'
+     */
+    public $type = 'to';
+
+    /**
      * @var array associative array of recipient-specific merge variables
      */
     protected $merge_vars = array();
@@ -33,13 +38,17 @@ class Recipient extends Struct{
     /**
      * @param string $email the recipient's email address
      * @param string $name the recipient's name
+     * @param string $type the recipient's header type i.e. 'to', 'cc', 'bcc'
      */
-    function __construct($email = NULL, $name = NULL){
+    function __construct($email = NULL, $name = NULL, $type = NULL){
         if(!is_null($email)){
             $this->email = $email;
         }
         if(!is_null($name)){
             $this->name = $name;
+        }
+        if(!is_null($type)){
+            $this->type = $type;
         }
     }
 
