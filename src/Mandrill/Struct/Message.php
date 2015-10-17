@@ -261,7 +261,8 @@ class Message extends Struct{
     public function addRecipient(Recipient $recipient){
         $this->to[] = array(
             'email' => $recipient->email,
-            'name' => $recipient->name
+            'name' => $recipient->name,
+            'type' => $recipient->type
         );
         $this->merge_vars[] = array(
             'rcpt' => $recipient->email,
