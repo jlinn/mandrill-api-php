@@ -5,9 +5,9 @@
  * Time: 5:20 PM
  */
 
-namespace Mandrill\Tests\Api;
+namespace Jlinn\Mandrill\Tests\Api;
 
-use Mandrill\Tests\MandrillTestCase;
+use Jlinn\Mandrill\Tests\MandrillTestCase;
 
 class UsersTest extends MandrillTestCase {
     /**

@@ -5,12 +5,12 @@
  * Time: 5:12 PM
  */
 
-namespace Mandrill\Tests;
+namespace Jlinn\Mandrill\Tests;
 
 use Guzzle\Http\Message\Response;
 use Guzzle\Plugin\Mock\MockPlugin;
 use Guzzle\Tests\GuzzleTestCase;
-use Mandrill\Mandrill;
+use Jlinn\Mandrill\Mandrill;
 
 class MandrillTestCase extends GuzzleTestCase{
     /**
