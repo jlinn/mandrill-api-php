@@ -8,17 +8,15 @@ class MandrillServiceProvider extends ServiceProvider
 {
     protected $defer = false;
 
-    public function boot()
-    {
-        $this->package('jlinn/mandrill-api-php');
-    }
-
     public function register()
     {
-        $this->app->bind('mandrill', function ()
+        $this->package('jlinn/mandrill-api-php');
+
+        $this->app['mandrill'] = $this->app->share(function ($app)
         {
-            $config = $this->app->config->get('mandrill-api-php::config');
-            return new MandrillFactory($config['secret']);
+            $config = $app->config->get('mandrill-api-php::config');
+            $factory = "\\{$config['factory']}";
+            return new $factory($config['secret']);
         });
     }
 
