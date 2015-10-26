@@ -5,9 +5,9 @@
  * Time: 11:24 AM
  */
 
-namespace Mandrill\Struct;
+namespace Jlinn\Mandrill\Struct;
 
-use Mandrill\Struct;
+use Jlinn\Mandrill\Struct;
 
 class Recipient extends Struct{
     /**

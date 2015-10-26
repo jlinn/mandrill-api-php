@@ -5,7 +5,7 @@
  * Time: 4:46 PM
  */
 
-namespace Mandrill;
+namespace Jlinn\Mandrill;
 
 use Guzzle\Http\Client;
 use Guzzle\Http\Exception\ServerErrorResponseException;

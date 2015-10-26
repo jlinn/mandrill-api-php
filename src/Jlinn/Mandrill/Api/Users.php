@@ -5,11 +5,10 @@
  * Time: 5:05 PM
  */
 
-namespace Mandrill\Api;
-
+namespace Jlinn\Mandrill\Api;
 
 use Guzzle\Http\Client;
-use Mandrill\Api;
+use Jlinn\Mandrill\Api;
 
 /**
  * Class Users

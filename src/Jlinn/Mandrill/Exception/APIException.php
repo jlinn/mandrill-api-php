@@ -5,8 +5,7 @@
  * Time: 12:24 PM
  */
 
-namespace Mandrill\Exception;
-
+namespace Jlinn\Mandrill\Exception;
 
 use Mandrill\Exception;
 

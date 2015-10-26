@@ -17,13 +17,14 @@ php composer.phar require jlinn/mandrill-api-php:~1.0
 
 Usage
 =====
+
 Sending a Message
 -----------------
 
 ```php
-use Mandrill\Mandrill;
-use Mandrill\Struct\Message;
-use Mandrill\Struct\Recipient;
+use Jlinn\Mandrill\Mandrill;
+use Jlinn\Mandrill\Struct\Message;
+use Jlinn\Mandrill\Struct\Recipient;
 
 // instantiate a client object
 $mandrill = new Mandrill('your_api_key');
@@ -49,3 +50,38 @@ $message->addRecipient($recipient);
 // send the message
 $response = $mandrill->messages()->send($message);
 ```
+
+Usage with Laravel 4.x
+=====
+
+We have built a factory so that it's easier to use with Laravel 4.x facades.
+
+Configuration
+-----------------
+
+In order to publish the package configuration you need to perform the following command:
+
+```
+php artisan config:publish jlinn/mandrill-api-php
+```
+
+Change then the `secret` variable with your Mandrill secret key.
+
+Sending a Message
+-----------------
+
+```php
+$api = Mandrill::api();
+
+$message = Mandrill::message([
+    'text'       => 'Hello, *|NAME|*!',
+    'subject'    => 'Test',
+    'from_email' => 'test@example.com',
+    'from_name'  => 'Mandrill API Test'
+]);
+
+$recipient = Mandrill::recipient('recipient.email@example.com', 'Recipient Name');
+$recipient->addMergeVar('NAME', $recipient->name);
+$message->addRecipient($recipient);
+
+$response = $api->messages()->send($message);

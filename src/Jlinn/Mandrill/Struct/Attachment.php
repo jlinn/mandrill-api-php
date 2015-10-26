@@ -5,9 +5,9 @@
  * Time: 11:48 AM
  */
 
-namespace Mandrill\Struct;
+namespace Jlinn\Mandrill\Struct;
 
-use Mandrill\Struct;
+use Jlinn\Mandrill\Struct;
 
 class Attachment extends Struct{
     /**
