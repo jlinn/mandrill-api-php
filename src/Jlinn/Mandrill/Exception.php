@@ -7,6 +7,6 @@
 
 namespace Jlinn\Mandrill;
 
-class Exception extends \Exception{
+class Exception extends \Exception {
 
 }

@@ -9,7 +9,7 @@ namespace Jlinn\Mandrill;
 
 use Guzzle\Http\Client;
 use Guzzle\Http\Exception\ServerErrorResponseException;
-use Mandrill\Exception\APIException;
+use Jlinn\Mandrill\Exception\APIException;
 
 abstract class Api{
     const BASE_URL = 'https://mandrillapp.com/api/1.0/';

@@ -7,7 +7,7 @@
 
 namespace Jlinn\Mandrill\Exception;
 
-use Mandrill\Exception;
+use Jlinn\Mandrill\Exception;
 
 class APIException extends Exception{
     /**
