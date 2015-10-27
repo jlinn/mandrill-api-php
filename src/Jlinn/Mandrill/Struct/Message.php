@@ -5,9 +5,9 @@
  * Time: 10:49 AM
  */
 
-namespace Mandrill\Struct;
+namespace Jlinn\Mandrill\Struct;
 
-use Mandrill\Struct;
+use Jlinn\Mandrill\Struct;
 
 class Message extends Struct{
     /**

@@ -5,10 +5,9 @@
  * Time: 4:52 PM
  */
 
-namespace Mandrill\Api;
+namespace Jlinn\Mandrill\Api;
 
-
-use Mandrill\Api;
+use Jlinn\Mandrill\Api;
 
 /**
  * Class Inbound

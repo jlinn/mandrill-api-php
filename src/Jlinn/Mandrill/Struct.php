@@ -5,8 +5,7 @@
  * Time: 4:19 PM
  */
 
-namespace Mandrill;
-
+namespace Jlinn\Mandrill;
 
 abstract class Struct implements \IteratorAggregate{
     /**

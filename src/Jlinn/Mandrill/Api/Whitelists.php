@@ -5,10 +5,9 @@
  * Time: 3:43 PM
  */
 
-namespace Mandrill\Api;
+namespace Jlinn\Mandrill\Api;
 
-
-use Mandrill\Api;
+use Jlinn\Mandrill\Api;
 
 /**
  * Class Whitelists

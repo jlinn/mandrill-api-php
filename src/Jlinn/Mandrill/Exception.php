@@ -5,9 +5,8 @@
  * Time: 12:23 PM
  */
 
-namespace Mandrill;
+namespace Jlinn\Mandrill;
 
-
-class Exception extends \Exception{
+class Exception extends \Exception {
 
 }

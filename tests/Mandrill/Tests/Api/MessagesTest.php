@@ -5,13 +5,12 @@
  * Time: 12:07 PM
  */
 
-namespace Mandrill\Tests\Api;
+namespace Jlinn\Mandrill\Tests\Api;
 
-
-use Mandrill\Api\Messages;
-use Mandrill\Struct\Message;
-use Mandrill\Struct\Recipient;
-use Mandrill\Tests\MandrillTestCase;
+use Jlinn\Mandrill\Api\Messages;
+use Jlinn\Mandrill\Struct\Message;
+use Jlinn\Mandrill\Struct\Recipient;
+use Jlinn\Mandrill\Tests\MandrillTestCase;
 
 class MessagesTest extends MandrillTestCase{
     /**

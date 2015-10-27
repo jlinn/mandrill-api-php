@@ -5,10 +5,9 @@
  * Time: 3:49 PM
  */
 
-namespace Mandrill\Api;
+namespace Jlinn\Mandrill\Api;
 
-
-use Mandrill\Api;
+use Jlinn\Mandrill\Api;
 
 /**
  * Class Senders

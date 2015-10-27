@@ -5,11 +5,11 @@
  * Time: 11:55 AM
  */
 
-namespace Mandrill\Api;
+namespace Jlinn\Mandrill\Api;
 
 use Guzzle\Http\Client;
-use Mandrill\Api;
-use Mandrill\Struct\Message;
+use Jlinn\Mandrill\Api;
+use Jlinn\Mandrill\Struct\Message;
 
 /**
  * Class Messages

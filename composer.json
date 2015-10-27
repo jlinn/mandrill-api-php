@@ -19,8 +19,18 @@
     },
     "autoload": {
         "psr-0": {
-            "Mandrill": "src/",
-            "Mandrill\\Tests": "tests/"
+            "Jlinn\\": "src/Jlinn/"
+        },
+        "psr-4": {
+            "Jlinn\\": "src/Jlinn/"
+        }
+    },
+    "autoload-dev": {
+        "psr-0": {
+            "Jlinn\\": "tests/"
+        },
+        "psr-4": {
+            "Jlinn\\": "tests/"
         }
     }
 }

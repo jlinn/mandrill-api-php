@@ -1,12 +1,12 @@
 <?php
+
 /**
  * User: Joe Linn
  * Date: 9/13/13
  * Time: 10:07 AM
  */
 
-namespace Mandrill;
-
+namespace Jlinn\Mandrill;
 
 class Mandrill{
     /**

@@ -5,10 +5,9 @@
  * Time: 12:24 PM
  */
 
-namespace Mandrill\Exception;
+namespace Jlinn\Mandrill\Exception;
 
-
-use Mandrill\Exception;
+use Jlinn\Mandrill\Exception;
 
 class APIException extends Exception{
     /**

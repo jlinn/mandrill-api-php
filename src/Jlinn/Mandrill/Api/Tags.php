@@ -5,10 +5,9 @@
  * Time: 3:25 PM
  */
 
-namespace Mandrill\Api;
+namespace Jlinn\Mandrill\Api;
 
-
-use Mandrill\Api;
+use Jlinn\Mandrill\Api;
 
 /**
  * Class Tags
