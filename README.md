@@ -71,8 +71,11 @@ Sending a Message
 -----------------
 
 ```php
+
+// instantiate a client object
 $api = Mandrill::api();
 
+// instantiate a message object
 $message = Mandrill::message([
     'text'       => 'Hello, *|NAME|*!',
     'subject'    => 'Test',
@@ -80,8 +83,12 @@ $message = Mandrill::message([
     'from_name'  => 'Mandrill API Test'
 ]);
 
+// instantiate a Recipient object and add details
 $recipient = Mandrill::recipient('recipient.email@example.com', 'Recipient Name');
 $recipient->addMergeVar('NAME', $recipient->name);
+
+// add the recipient to the message
 $message->addRecipient($recipient);
 
+// send the message
 $response = $api->messages()->send($message);
