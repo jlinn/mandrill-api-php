@@ -72,7 +72,7 @@ class Messages extends Api{
      * @return array
      * @link https://mandrillapp.com/api/docs/messages.JSON.html#method=search
      */
-    public function search($query = '*', $dateFrom = NULL, $dateTo = NULL, array $tags = array(), array $senders = array(), array $apiKeys = array(), $limit = 100){
+    public function search($query = '*', $dateFrom = NULL, $dateTo = NULL, array $tags = array(), array $senders = array(), array $apiKeys = array(), $limit = 100) {
         return $this->request('search', array(
             'query' => $query,
             'date_from' => $dateFrom,
