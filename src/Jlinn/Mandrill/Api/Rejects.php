@@ -32,6 +32,14 @@ class Rejects extends Api{
     }
 
     /**
+     * Alias function of listRejects so that it's easier to migrate from the official mandrill PHP library.
+     * @see listRejects()
+     */
+    public function getList($email = NULL, $includeExpired = false, $subaccount = NULL) {
+        return $this->listRejects($email, $includeExpired, $subaccount);
+    }
+
+    /**
      * Retrieves your email rejection blacklist
      * @param string $email an optional email address to search by
      * @param bool $includeExpired whether to include rejections that have already expired.
@@ -39,7 +47,7 @@ class Rejects extends Api{
      * @return array
      * @link https://mandrillapp.com/api/docs/rejects.JSON.html#method=list
      */
-    public function listRejects($email = NULL, $includeExpired = false, $subaccount = NULL){
+    public function listRejects($email = NULL, $includeExpired = false, $subaccount = NULL) {
         return $this->request('list', array(
             'email' => $email,
             'include_expired' => $includeExpired,
