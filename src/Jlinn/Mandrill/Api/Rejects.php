@@ -31,6 +31,10 @@ class Rejects extends Api{
         ));
     }
 
+    /**
+     * Alias function of listRejects so that it's easier to migrate from the official mandrill PHP library.
+     * @see listRejects()
+     */
     public function getList($email = NULL, $includeExpired = false, $subaccount = NULL) {
         return $this->listRejects($email, $includeExpired, $subaccount);
     }
